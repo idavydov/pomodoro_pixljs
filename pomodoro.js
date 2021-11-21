@@ -19,7 +19,6 @@ class PigAnimation {
   }
 
   stop() {
-    console.log("stop");
     this.off();
     startNextMode();
   }
@@ -156,7 +155,6 @@ function startNextMode() {
 
 
 function init() {
-  console.log("init");
   Pixl.setLCDPower(true);
   g.clear();
   g.flip();
