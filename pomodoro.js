@@ -112,7 +112,6 @@ function drawTime(sec, curM, nextM) {
 }
 
 function onSecond() {
-  left-=1;
   if (left < - 30 * 60) {
     turnOff();
     return;
@@ -123,6 +122,7 @@ function onSecond() {
     LED.set();
     setTimeout(() => {LED.reset();}, 200);
   }
+  left-=1;
 }
 
 function getNextMode() {
