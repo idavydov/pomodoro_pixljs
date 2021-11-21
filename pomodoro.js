@@ -185,6 +185,7 @@ function toggle() {
   }
 }
 
-setWatch(toggle, BTN2, {edge:"rising", debounce:50, repeat:true});
-
-init();
+function onInit() {
+  turnOff();
+  setWatch(toggle, BTN2, {edge:"rising", debounce:50, repeat:true});
+}
